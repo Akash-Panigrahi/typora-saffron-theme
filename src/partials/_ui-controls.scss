@@ -1,0 +1,271 @@
+header {
+    height: 30px;
+    background-image: none !important;
+    background-color: $code-bg !important;
+}
+
+#w-traffic-lights {
+    height: 30px;
+
+    > * {
+        height: inherit;
+        margin: 0;
+    }
+}
+
+footer {
+    background-color: $bg !important;
+}
+
+// Mega Menu
+.megamenu-menu {
+    .megamenu-menu-list a {
+        height: auto;
+        transition: border-radius 0.2s ease-out;
+    }
+
+    .megamenu-menu-list a.active {
+        background-color: $saffron;
+        color: black;
+        border-radius: 0 100px 100px 0;
+        margin-right: 10px;
+    }
+
+    .megamenu-menu-list li:not(.saved) a:not(.active):hover {
+        background-color: rgba(black, 0.8);
+    }
+
+    .megamenu-menu-list a.active:hover {
+        background-color: $saffron;
+        color: black;
+        cursor: unset;
+    }
+
+    #m-saved {
+        background-color: transparent;
+        cursor: unset;
+    }
+
+    #m-close:hover {
+        background-color: #e34a2f;
+    }
+
+    .divider {
+        margin: 0;
+    }
+}
+
+.megamenu-content {
+    background-image: none;
+    background-color: $bg;
+    padding-top: 30px;
+}
+
+.long-btn {
+    border-radius: 3px;
+    border-color: $saffron;
+}
+
+.long-btn:hover {
+    background-color: $saffron;
+    color: black !important;
+}
+
+// Preferences
+.header-close svg {
+    fill: white !important;
+}
+
+.header-close:hover svg {
+    fill: #e34a2f !important;
+}
+
+#uni-preference-panel {
+    background: $code-bg;
+}
+
+.ty-preferences {
+    color: white;
+
+    select {
+        background-color: white;
+        color: black;
+    }
+
+    .nav-group-item {
+        &.active, &:active {
+            background-color: $saffron;
+            color: black;
+        }
+    }
+}
+
+// Themes
+.theme-preview-div:hover {
+    border-color: rgba($saffron, 0.6);
+}
+
+// About
+#about-content {
+    tr:hover {
+        background-color: $saffron !important;
+
+        td {
+            color: black;
+        }
+    }
+}
+
+// Sidebar
+.sidebar-menu {
+    background-color: $code-bg !important;
+
+    .info-panel-tab-wrapper {
+        height: auto;
+    }
+
+    .info-panel-tab-border {
+        background-color: $saffron !important;
+        border-radius: 10px;
+    }
+}
+
+#sidebar-content {
+    #file-library-search-input {
+        border-color: $saffron;
+    }
+
+    .searchpanel-search-option-btn:hover {
+        background-color: $saffron;
+        fill: $bg;
+    }
+
+    .file-list-item {
+        &.active {
+            background: $saffron;
+            color: black;
+        }
+    }
+
+    .file-list-item-file-ext-part {
+        opacity: 1;
+    }
+}
+
+// Source View
+#typora-source {
+    top: 0;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn {
+    background-color: $saffron;
+    color: black;
+}
+
+#recent-file-panel-search-input {
+    border-radius: 4px;
+    border-color: $saffron;
+    width: calc(100% - 70px);
+}
+
+#recent-file-panel-action-btn-container {
+    margin: 0 !important;
+
+    #recent-file-panel-action-btn {
+        border-radius: 4px;
+        background-color: $saffron;
+        border-color: $saffron;
+        color: $code-bg;
+
+        &:hover {
+            color: $code-bg;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $code-bg;
+    }
+}
+
+#recent-document-table {
+    padding: 0;
+}
+
+.recent-file-item {
+    background-color: $code-bg !important;
+
+    &:hover {
+        background-color: $bg !important;
+    }
+}
+
+// Save Modal
+.modal-open .modal.fade.in {
+    background-color: rgba(black, 0.6);
+}
+
+.modal-content {
+    background: $bg;
+    border-radius: 4px;
+    border-color: $saffron;
+    box-shadow: 0 0px 10px -5px rgba(black, 0.8);
+}
+
+.modal-footer .btn {
+    border-radius: 3px;
+
+    &:nth-child(1) {
+        background-color: $saffron !important;
+        color: $bg;
+        border: 1px solid $saffron;
+    }
+
+    &:nth-child(2) {
+        border: 1px solid $saffron;
+    }
+
+    &:nth-child(3):hover {
+        background-color: #e34a2f;
+        border: 1px solid transparent;
+    }
+}
+
+#md-notification {
+    background-color: black !important;
+}
+
+// Focus Mode
+.on-focus-mode {
+    .md-end-block:not(.md-focus):not(.md-focus-container) * {
+        color: rgba(white, 0.3) !important;
+    }
+
+    .md-focus,
+    .md-focus-container {
+
+    }
+}
+
+#file-library-tree {
+    .file-library-file-node.active {
+        .file-node-background {
+            background: $saffron;
+            border-color: cornflowerblue;
+        }
+
+        .file-node-content {
+            color: black;
+        }
+    }
+}
+
+// Selection
+.in-text-selection, ::selection {
+    background: aqua;
+    color: black;
+}
+
+// Image
+.md-image > .md-meta {
+    color: yellow;
+}

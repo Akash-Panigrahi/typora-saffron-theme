@@ -1,0 +1,123 @@
+.cm-s-inner,
+.cm-s-typora-default {
+  background-color: $code-bg;
+  color: rgba(233, 237, 237, 1);
+
+  .CodeMirror-gutters {
+    background: $code-bg;
+    color: rgb(83, 127, 126);
+    border: none;
+  }
+
+  .CodeMirror-guttermarker,
+  .CodeMirror-guttermarker-subtle,
+  .CodeMirror-linenumber {
+    color: rgb(83, 127, 126);
+  }
+
+  .CodeMirror-cursor {
+    border-left: 1px solid #f8f8f0;
+  }
+
+  div.CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  &.CodeMirror-focused div.CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .CodeMirror-line {
+    &::selection {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    > span {
+      &::selection,
+      > span::selection {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+
+  .CodeMirror-activeline-background {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+  }
+
+  .cm-keyword {
+    color: rgba(199, 146, 234, 1);
+  }
+
+  .cm-operator {
+    color: rgba(233, 237, 237, 1);
+  }
+
+  .cm-variable-2 {
+    color: #80cbc4;
+  }
+
+  .cm-variable-3 {
+    color: #82b1ff;
+  }
+
+  .cm-builtin {
+    color: #decb6b;
+  }
+
+  .cm-atom,
+  .cm-number {
+    color: #f77669;
+  }
+
+  .cm-def {
+    color: rgba(233, 237, 237, 1);
+  }
+
+  .cm-string {
+    color: #c3e88d;
+  }
+
+  .cm-string-2 {
+    color: #80cbc4;
+  }
+
+  .cm-comment {
+    color: #546e7a;
+  }
+
+  .cm-variable {
+    color: #82b1ff;
+  }
+
+  .cm-tag,
+  .cm-meta {
+    color: #80cbc4;
+  }
+
+  .cm-attribute {
+    color: #ffcb6b;
+  }
+
+  .cm-property {
+    color: #80cbae;
+  }
+
+  .cm-qualifier,
+  .cm-variable-3 {
+    color: #decb6b;
+  }
+
+  .cm-tag {
+    color: $saffron;
+  }
+
+  .cm-error {
+    color: rgba(255, 255, 255, 1);
+    background-color: #ec5f67;
+  }
+}

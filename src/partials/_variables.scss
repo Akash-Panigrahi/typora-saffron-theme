@@ -1,0 +1,40 @@
+$saffron: #ff9933;
+$white: #ffffff;
+$indian-green: #138808;
+$navy-blue: #000080;
+$code-bg: #171717;
+$bg: #232323;
+$text: white;
+
+:root {
+  --bg-color: #232323;
+  --text-color: $text;
+//   --code-block-bg-color: inherit;
+//   --md-char-color: #c7c5c5;
+//   --meta-content-color: #5b808d;
+//   --blur-text-color: #c8c8c8;
+//   --drag-placeholder-color: #c7c5c5;
+//   --panel-border-color: #777777;
+//   --active-toggle-btn-color: #ddd;
+//   --table-border-color: #ccc;
+//   --primary-color: #428bca;
+//   --primary-btn-border-color: #285e8e;
+//   --primary-btn-text-color: #fff;
+//   --search-select-bg-color: #000;
+//   --search-select-text-color: #fff;
+//   --heading-char-color: #ddd;
+//   --color-popover-bg-color: #fafafa;
+  --control-text-color: var(--text-color);
+  --control-text-hover-color: var(--text-color);
+//   --window-border: 1px solid #eee;
+//   --active-file-bg-color: #eee;
+//   --active-file-text-color: inherit;
+//   --active-file-border-color: #777;
+//   --focus-ring-color: #6eace2;
+  --item-hover-bg-color: rgba(0, 0, 0, 0.7);
+//   --item-hover-text-color: inherit;
+  --side-bar-bg-color: var(--bg-color);
+//   --side-bar-menu-active-tint: var(--side-bar-menu-active-tint);
+//   --mac-title-bar-height: 20px;
+//   --sidebar-width: 270px;
+}

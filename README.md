@@ -18,4 +18,4 @@ Not much design thinking is done.
 
 Just used color combination that I like.
 
-![img](./saffron-dark-preview4x.png)
+![img](demo/saffron-dark-preview4x.png)
