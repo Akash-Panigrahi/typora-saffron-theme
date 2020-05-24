@@ -1,7 +1,7 @@
 header {
     height: 30px;
     background-image: none !important;
-    background-color: $code-bg !important;
+    background-color: $black17 !important;
 }
 
 #w-traffic-lights {
@@ -14,7 +14,7 @@ header {
 }
 
 footer {
-    background-color: $bg !important;
+    background-color: $black23 !important;
 }
 
 // Mega Menu
@@ -57,7 +57,7 @@ footer {
 
 .megamenu-content {
     background-image: none;
-    background-color: $bg;
+    background-color: $black23;
     padding-top: 30px;
 }
 
@@ -81,7 +81,7 @@ footer {
 }
 
 #uni-preference-panel {
-    background: $code-bg;
+    background: $black17;
 }
 
 .ty-preferences {
@@ -118,7 +118,7 @@ footer {
 
 // Sidebar
 .sidebar-menu {
-    background-color: $code-bg !important;
+    background-color: $black17 !important;
 
     .info-panel-tab-wrapper {
         height: auto;
@@ -130,6 +130,13 @@ footer {
     }
 }
 
+.active-tab-files #info-panel-tab-file,
+.active-tab-files #info-panel-tab-file:hover,
+.active-tab-outline #info-panel-tab-outline,
+.active-tab-outline #info-panel-tab-outline:hover {
+    font-weight: normal;
+}
+
 #sidebar-content {
     #file-library-search-input {
         border-color: $saffron;
@@ -137,7 +144,7 @@ footer {
 
     .searchpanel-search-option-btn:hover {
         background-color: $saffron;
-        fill: $bg;
+        fill: $black23;
     }
 
     .file-list-item {
@@ -175,15 +182,15 @@ footer {
         border-radius: 4px;
         background-color: $saffron;
         border-color: $saffron;
-        color: $code-bg;
+        color: $black17;
 
         &:hover {
-            color: $code-bg;
+            color: $black17;
         }
     }
 
     .dropdown-menu {
-        background-color: $code-bg;
+        background-color: $black17;
     }
 }
 
@@ -192,10 +199,10 @@ footer {
 }
 
 .recent-file-item {
-    background-color: $code-bg !important;
+    background-color: $black17 !important;
 
     &:hover {
-        background-color: $bg !important;
+        background-color: $black23 !important;
     }
 }
 
@@ -205,7 +212,7 @@ footer {
 }
 
 .modal-content {
-    background: $bg;
+    background: $black23;
     border-radius: 4px;
     border-color: $saffron;
     box-shadow: 0 0px 10px -5px rgba(black, 0.8);
@@ -216,7 +223,7 @@ footer {
 
     &:nth-child(1) {
         background-color: $saffron !important;
-        color: $bg;
+        color: $black23;
         border: 1px solid $saffron;
     }
 
@@ -247,6 +254,8 @@ footer {
 }
 
 #file-library-tree {
+    --node-height: 40px;
+
     .file-library-file-node.active {
         .file-node-background {
             background: $saffron;
@@ -255,6 +264,31 @@ footer {
 
         .file-node-content {
             color: black;
+        }
+    }
+
+    .file-node-background {
+        height: var(--node-height);
+    }
+
+    .file-node-content {
+        height: var(--node-height);
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    .file-tree-node {
+        height: var(--node-height);
+
+        &:focus {
+            .file-node-content {
+                outline: 0;
+            }
+
+            .file-node-content {
+                background-color: var(--item-hover-bg-color);
+            }
         }
     }
 }
