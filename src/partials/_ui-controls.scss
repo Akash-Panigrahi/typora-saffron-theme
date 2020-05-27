@@ -246,11 +246,6 @@ footer {
     .md-end-block:not(.md-focus):not(.md-focus-container) * {
         color: rgba(white, 0.3) !important;
     }
-
-    .md-focus,
-    .md-focus-container {
-
-    }
 }
 
 #file-library-tree {
@@ -276,20 +271,25 @@ footer {
         display: flex;
         align-items: center;
         padding: 0;
+
+        &:hover {
+            // background-color: var(--item-hover-bg-color);
+            cursor: pointer;
+        }
     }
 
     .file-tree-node {
-        height: var(--node-height);
+        // height: var(--node-height);
 
         &:focus {
             .file-node-content {
                 outline: 0;
             }
-
-            .file-node-content {
-                background-color: var(--item-hover-bg-color);
-            }
         }
+    }
+
+    .file-node-icon {
+        margin-right: 8px;
     }
 }
 
@@ -302,4 +302,8 @@ footer {
 // Image
 .md-image > .md-meta {
     color: yellow;
+}
+
+#theme-preview-grid {
+    max-width: initial;
 }
