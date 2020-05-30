@@ -1,5 +1,9 @@
 # Saffron theme for Typora
 
+![Latest Release Version](https://img.shields.io/github/v/release/Akash-Panigrahi/typora-saffron-theme)
+![Latest Release Date](https://img.shields.io/github/release-date/Akash-Panigrahi/typora-saffron-theme)
+![Download Count](https://img.shields.io/github/downloads/Akash-Panigrahi/typora-saffron-theme/total)
+
 ---
 ## Installation instructions
 
