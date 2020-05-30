@@ -4,7 +4,8 @@
 ![Latest Release Date](https://img.shields.io/github/release-date/Akash-Panigrahi/typora-saffron-theme)
 ![Download Count](https://img.shields.io/github/downloads/Akash-Panigrahi/typora-saffron-theme/total)
 
----
+> **Note:** Designed and tested on Windows/Linux with full Unibody support. Theoretically they should work on MacOS, but if not - the Github issues page is not going to be filled by itself.
+
 ## Installation instructions
 
 1. Download the zipped project package.
@@ -36,6 +37,9 @@
 
 ![img](demo/typora-settings.png)
 
+---
 
+## Credits
 
-> **Note:**  Not tested on MacOS
+1. The color inspiration came from my motherland's flag.
+2. Font used is [Comforta](https://fonts.google.com/specimen/Comfortaa?query=comfortaa) - got from Google Fonts.
