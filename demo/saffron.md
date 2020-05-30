@@ -6,7 +6,7 @@ description: File showcasing all possible uses of markdown
 
 # नमूना
 
-## Inventions By India
+## Inventions By Bharat *(India)*
 
 - Zero
 - Ayurveda
@@ -23,4 +23,3 @@ description: File showcasing all possible uses of markdown
 - Natural Fibres
 - Plastic Surgery
 - Flush Toilets
-

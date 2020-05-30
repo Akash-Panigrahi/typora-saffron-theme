@@ -1,26 +1,26 @@
 @font-face {
   font-family: Comfortaa;
-  src: url("./saffron-dark/Comfortaa-Regular.ttf");
+  src: url("./saffron/Comfortaa-Regular.ttf");
 }
 
 @font-face {
   font-family: Comfortaa Light;
-  src: url("./saffron-dark/Comfortaa-Light.ttf");
+  src: url("./saffron/Comfortaa-Light.ttf");
 }
 
 @font-face {
   font-family: Comfortaa Medium;
-  src: url("./saffron-dark/Comfortaa-Medium.ttf");
+  src: url("./saffron/Comfortaa-Medium.ttf");
 }
 
 @font-face {
   font-family: Comfortaa SemiBold;
-  src: url("./saffron-dark/Comfortaa-SemiBold.ttf");
+  src: url("./saffron/Comfortaa-SemiBold.ttf");
 }
 
 @font-face {
   font-family: Comfortaa Bold;
-  src: url("./saffron-dark/Comfortaa-Bold.ttf");
+  src: url("./saffron/Comfortaa-Bold.ttf");
 }
 
 :root {
@@ -816,4 +816,4 @@ mark {
 .md-fences .code-tooltip {
   background-color: #171717;
 }
-/*# sourceMappingURL=saffron-dark.css.map */
+/*# sourceMappingURL=saffron.css.map */
