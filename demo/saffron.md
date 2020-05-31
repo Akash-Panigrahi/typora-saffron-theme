@@ -1,12 +1,4 @@
----
-title: Sample
-author: Akash Panigrahi
-description: File showcasing all possible uses of markdown
----
-
-# नमूना
-
-## Inventions By Bharat *(India)*
+## भारतीय आविष्कारें
 
 - Zero
 - Ayurveda
@@ -20,6 +12,6 @@ description: File showcasing all possible uses of markdown
 - Buttons
 - Cure for leprosy and lithiasis
 - Cataract surgery
-- Natural Fibres
+- Natural fibers
 - Plastic Surgery
 - Flush Toilets

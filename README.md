@@ -23,23 +23,23 @@
 
 ### File List
 
-![img](demo/typora-file-list.png)
+![img](demo/saffron-file-list.png)
 
 
 
 ### Tree View
 
-![img](demo/typora-tree-view.png)
+![img](demo/saffron-tree-view.png)
 
 
 
 ### Settings Page
 
-![img](demo/typora-settings.png)
+![img](demo/saffron-menu.png)
 
 ---
 
 ## Credits
 
 1. The color inspiration came from my motherland's flag.
-2. Font used is [Comforta](https://fonts.google.com/specimen/Comfortaa?query=comfortaa) - got from Google Fonts.
+2. Font used is [Comfortaa](https://fonts.google.com/specimen/Comfortaa?query=comfortaa) - got from Google Fonts.
