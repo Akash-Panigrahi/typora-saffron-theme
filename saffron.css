@@ -1,26 +1,26 @@
 @font-face {
   font-family: Comfortaa;
-  src: url("./saffron/Comfortaa-Regular.ttf");
+  src: url("./saffron-dark/Comfortaa-Regular.ttf");
 }
 
 @font-face {
   font-family: Comfortaa Light;
-  src: url("./saffron/Comfortaa-Light.ttf");
+  src: url("./saffron-dark/Comfortaa-Light.ttf");
 }
 
 @font-face {
   font-family: Comfortaa Medium;
-  src: url("./saffron/Comfortaa-Medium.ttf");
+  src: url("./saffron-dark/Comfortaa-Medium.ttf");
 }
 
 @font-face {
   font-family: Comfortaa SemiBold;
-  src: url("./saffron/Comfortaa-SemiBold.ttf");
+  src: url("./saffron-dark/Comfortaa-SemiBold.ttf");
 }
 
 @font-face {
   font-family: Comfortaa Bold;
-  src: url("./saffron/Comfortaa-Bold.ttf");
+  src: url("./saffron-dark/Comfortaa-Bold.ttf");
 }
 
 :root {
@@ -288,8 +288,7 @@ footer {
   color: black;
 }
 
-.ty-preferences .nav-group-item.active,
-.ty-preferences .nav-group-item:active {
+.ty-preferences .nav-group-item.active, .ty-preferences .nav-group-item:active {
   background-color: #ff9933;
   color: black;
 }
@@ -319,6 +318,13 @@ footer {
   border-radius: 10px;
 }
 
+.active-tab-files #info-panel-tab-file,
+.active-tab-files #info-panel-tab-file:hover,
+.active-tab-outline #info-panel-tab-outline,
+.active-tab-outline #info-panel-tab-outline:hover {
+  font-weight: normal;
+}
+
 #sidebar-content #file-library-search-input {
   border-color: #ff9933;
 }
@@ -328,13 +334,30 @@ footer {
   fill: #232323;
 }
 
+#sidebar-content .file-list-item {
+  border-bottom: 0;
+}
+
 #sidebar-content .file-list-item.active {
-  background: #ff9933;
-  color: black;
+  background: rgba(0, 0, 0, 0.4);
+  border-left: 4px solid #ff9933;
+}
+
+#sidebar-content .file-list-item:hover:not(.active) {
+  background-color: black;
+  cursor: pointer;
 }
 
 #sidebar-content .file-list-item-file-ext-part {
   opacity: 1;
+}
+
+#sidebar-content .file-list-item-file-name {
+  margin-bottom: 4px;
+}
+
+#sidebar-content .file-list-item-summary {
+  opacity: .8;
 }
 
 #typora-source {
@@ -392,7 +415,7 @@ footer {
   border-radius: 4px;
   border-color: #ff9933;
   -webkit-box-shadow: 0 0px 10px -5px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0px 10px -5px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0px 10px -5px rgba(0, 0, 0, 0.8);
 }
 
 .modal-footer .btn {
@@ -422,29 +445,58 @@ footer {
   color: rgba(255, 255, 255, 0.3) !important;
 }
 
+#file-library-tree {
+  --node-height: 48px;
+}
+
 #file-library-tree .file-library-file-node.active .file-node-background {
-  background: #ff9933;
-  border-color: cornflowerblue;
+  background: rgba(0, 0, 0, 0.4);
+  border-color: #ff9933;
 }
 
-#file-library-tree .file-library-file-node.active .file-node-content {
-  color: black;
+#file-library-tree .file-node-background {
+  height: var(--node-height);
 }
 
-.in-text-selection,
-::-moz-selection {
+#file-library-tree .file-node-content {
+  height: var(--node-height);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+#file-library-tree .file-node-content:hover {
+  cursor: pointer;
+}
+
+#file-library-tree .file-tree-node:focus .file-node-content {
+  outline: 0;
+}
+
+#file-library-tree .file-node-icon {
+  margin-right: 8px;
+}
+
+.in-text-selection, ::-moz-selection {
   background: aqua;
   color: black;
 }
 
-.in-text-selection,
-::selection {
+.in-text-selection, ::selection {
   background: aqua;
   color: black;
 }
 
 .md-image > .md-meta {
   color: yellow;
+}
+
+#theme-preview-grid {
+  max-width: initial;
 }
 
 html,
@@ -614,8 +666,7 @@ table td {
   border-left: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-table th:first-child,
-table td:first-child {
+table th:first-child, table td:first-child {
   border-left: 0;
 }
 
@@ -686,8 +737,8 @@ code {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .task-list-item input {
@@ -700,9 +751,7 @@ code {
 
 /* Chrome 29+ */
 @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-  .task-list-item input:before,
-  .task-list-item input:checked:before,
-  .task-list-item input[checked]:before {
+  .task-list-item input:before, .task-list-item input:checked:before, .task-list-item input[checked]:before {
     margin-top: -0.2rem;
   }
 }
@@ -753,7 +802,7 @@ p.mathjax-block {
 .mathjax-block > .code-tooltip {
   bottom: 5px;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
 }
 
 .md-image > .md-meta {
@@ -816,4 +865,4 @@ mark {
 .md-fences .code-tooltip {
   background-color: #171717;
 }
-/*# sourceMappingURL=saffron.css.map */
+/*# sourceMappingURL=saffron-dark.css.map */
