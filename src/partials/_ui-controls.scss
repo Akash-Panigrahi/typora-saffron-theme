@@ -148,14 +148,29 @@ footer {
     }
 
     .file-list-item {
-        &.active {
-            background: $saffron;
-            color: black;
-        }
-    }
+        border-bottom: 0;
 
-    .file-list-item-file-ext-part {
-        opacity: 1;
+        &.active {
+            background: rgba(black, 0.4);
+            border-left: 4px solid $saffron;
+        }
+
+        &:hover:not(.active) {
+            background-color: black;
+            cursor: pointer;
+        }
+
+        &-file-ext-part {
+            opacity: 1;
+        }
+
+        &-file-name {
+            margin-bottom: 4px;
+        }
+
+        &-summary {
+            opacity: .8;
+        }
     }
 }
 
@@ -249,16 +264,12 @@ footer {
 }
 
 #file-library-tree {
-    --node-height: 40px;
+    --node-height: 48px;
 
     .file-library-file-node.active {
         .file-node-background {
-            background: $saffron;
-            border-color: cornflowerblue;
-        }
-
-        .file-node-content {
-            color: black;
+            background: rgba(black, 0.4);
+            border-color: $saffron;
         }
     }
 
